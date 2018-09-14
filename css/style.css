@@ -32,22 +32,27 @@ html, body {
     height:26px;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#F2CE5D)); */
 }
+
+
 /* ========================= END Globally used Classes ========================= */
 
 /* START top header */
 
 .header-elements{
     padding-top:10px;
+    padding-bottom: 10px;
 }
 #right-txt{
     font-size:18px;
     font-weight: bold;
+    text-align:right;
 }
 
-#right-txt span{
+#right-txt #loc-top{
     font-size: 20px;
     color:#1087dd;
 }
+
 /* END top header */
 
 /* START top bar  */
@@ -61,69 +66,12 @@ html, body {
 }
 /* END top bar  */
 
-/* Ribbon Styles */
-
-.ribbon-wrapper-green {
-    /* width: 85px;
-    height: 88px; */
-    width: 140px;
-    height: 150px;
-    overflow: hidden;
-    position: absolute;
-    top: -3px;
-    right: -3px;
-}
-
-.ribbon-green {
-    font: bold 15px Sans-Serif;
-    color: #333;
-    text-align: center;
-    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform:    rotate(45deg);
-    -ms-transform:     rotate(45deg);
-    -o-transform:      rotate(45deg);
-    position: relative;
-    z-index: 30;
-    padding: 7px 0;
-    left: -19px;
-    top: 31px;
-    width: 220px;
-    background-color: #BFDC7A;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
-    background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
-    background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
-    background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
-    background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
-    color: #6a6340;
-    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-    box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
-}
-
-.ribbon-green:before, .ribbon-green:after {
-    content: "";
-    border-top:   3px solid #6e8900;   
-    border-left:  3px solid transparent;
-    border-right: 3px solid transparent;
-    position:absolute;
-    bottom: -3px;
-}
-
-.ribbon-green:before {
-    left: 0;
-}
-.ribbon-green:after {
-    right: 0;
-}
-/* End Ribbon Styles */
-
 /* Listing Container styles */
 
 .tableInfo th{
     color: #1087dd;
 }
+
 
 /* End Listing Container styles */
 
@@ -137,3 +85,67 @@ footer{
 .footer-logos {float:left; margin-right:10px; width:60px;}
 
 /* End Footer Styles */
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    
+}
+
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+    /* top two bars */
+    .hide-br{
+        display: none;
+    }
+    .header-elements{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #right-txt{
+        text-align: center;
+    }
+    #right-txt p {
+        margin-bottom:0;
+        margin-top:-20px;
+        font-size:16px;
+    }
+    #top-bar{
+        font-size:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+
+    .hideTxtMobile {
+        display: none;
+    }
+
+    /* listings styles */
+    .ctaBtn{
+        margin-top: 10px;
+    }
+
+    .tableInfo{
+        margin-top: 10px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) { 
+
+}
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */
