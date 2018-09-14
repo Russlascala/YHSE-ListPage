@@ -121,6 +121,9 @@ html, body {
 
 /* Listing Container styles */
 
+.tableInfo th{
+    color: #1087dd;
+}
 
 /* End Listing Container styles */
 
