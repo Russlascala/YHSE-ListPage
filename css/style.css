@@ -72,6 +72,11 @@ html, body {
     color: #1087dd;
 }
 
+.cardImgs{
+    display:block;
+    margin: 0 auto;
+}
+
 
 /* End Listing Container styles */
 
@@ -139,12 +144,13 @@ M E D I A  Q U E R I E S
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991px) {
-
+    .btn-group-lg>.btn, .btn-lg {
+        font-size: 1rem;
+    }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199px) { 
-
 }
 
 /* Extra large devices (large desktops)
